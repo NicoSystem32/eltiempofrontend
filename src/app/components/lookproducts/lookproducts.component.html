@@ -1,0 +1,25 @@
+<h1>Todos los productos</h1>
+
+<div class="center">
+    <section id="content">
+        
+        <div id="articles">
+            <article class="article-item" *ngFor="let product of products">
+                
+                <h2>{{product.nombre}}</h2>
+                <span class="date">
+                    {{product.categoria}}
+                </span>
+                <span class="date">
+                    {{product.date.substring(0,10)}}
+                </span>
+
+                <div class="clearfix"></div>
+            </article>
+
+            
+
+        </div>
+    </section>
+    
+</div>
